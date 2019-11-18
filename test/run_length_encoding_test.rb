@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'run_length_encoding'
+require_relative '../lib/run_length_encoding'
 
 # Common test data version: 1.1.0 1b7900e
 class RunLengthEncodingTest < Minitest::Test

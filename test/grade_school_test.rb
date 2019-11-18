@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'grade_school'
+require_relative '../lib/grade_school'
 
 class SchoolTest < Minitest::Test
   def test_empty_grade
