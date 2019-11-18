@@ -2,7 +2,8 @@ require "etl"
 
 describe ETL do
 
-  describe "transform" do
+  describe ".transform" do
+
     it "a single letter" do
       old = { 1 => (["A"]) }
       expected = { "a" => 1 }

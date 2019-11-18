@@ -2,7 +2,7 @@ require "gigasecond"
 
 describe Gigasecond do
 
-  describe "initialize" do
+  describe ".initialize" do
 
     it "date only specification of time" do
       expect(Gigasecond.from(Time.utc(2011, 4, 25, 0, 0, 0))).to eq(Time.utc(2043, 1, 1, 1, 46, 40))

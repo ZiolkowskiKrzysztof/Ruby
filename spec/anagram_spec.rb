@@ -2,7 +2,8 @@ require "anagram"
 
 describe Anagram do
 
-  describe "match" do   
+  describe ".match" do   
+    
     it "no matches" do
       detector = Anagram.new("diaper")
       anagrams = detector.match(["hello", "world", "zombies", "pants"])

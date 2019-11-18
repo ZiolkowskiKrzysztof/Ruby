@@ -13,7 +13,7 @@ describe Grep do
     File.delete("paradise-lost.txt")
   end
 
-  describe "grep" do
+  describe ".grep" do
 
     it "one file one match no flags" do
       pattern = "Agamemnon"
@@ -129,7 +129,7 @@ describe Grep do
 
   end
 
-  describe "multiple" do
+  context "multiple" do
 
     it "files one match no flags" do
       pattern = "Agamemnon"

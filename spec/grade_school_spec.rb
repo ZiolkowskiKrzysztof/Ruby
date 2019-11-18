@@ -2,15 +2,17 @@ require "grade_school"
 
 describe School do
 
-  describe "initialize" do
+  describe ".initialize" do
+
     it "empty grade" do
       school = School.new
       expected = []
       expect(school.students(1)).to eq(expected)
     end
+
   end
 
-  describe "add" do
+  describe ".add" do
     
     it "student" do
       school = School.new
@@ -29,7 +31,7 @@ describe School do
 
   end
 
-  describe "grade" do
+  describe ".grade" do
 
     it "with multiple students" do
       school = School.new
@@ -50,7 +52,7 @@ describe School do
     
   end
 
-  describe "sort" do
+  context "sort" do
       
     it "empty students by grade" do
       school = School.new

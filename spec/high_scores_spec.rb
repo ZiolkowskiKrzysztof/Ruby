@@ -2,7 +2,7 @@ require "high_scores"
 
 describe HighScores do
 
-  describe "initialize" do
+  describe ".initialize" do
     
     it "list of scores" do
       scores = [30, 50, 20, 70]
@@ -53,7 +53,7 @@ describe HighScores do
     end
   end
 
-  describe "check" do
+  context "check" do
 
     it "latest score is not the personal best" do
       scores = [100, 40, 10, 70]
